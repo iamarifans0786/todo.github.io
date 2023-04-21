@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980b9;
+}
+
+.box {
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.box h1{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#item {
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px gray;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+#todo-box {
+   list-style: none;
+   margin-top: 20px;
+   margin-left: -40px; 
+}
+#todo-box li{
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none ;
+}
+b{
+    color: red;
+    float: right;
+}
+.done{
+    text-decoration: line-through;
+    color: red  !important;
+    background-color:#95a5a6 !important;
+   
+}
+
+
+/* Mobile Screens  */
+@media only screen and (max-width: 540px) {
+    #item {
+        font-size: 13px;
+        border: 1px solid green;
+    }
+    .box {
+        width: 80%;
+        min-height: 600px;
+    }
+}
